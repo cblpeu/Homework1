@@ -9,7 +9,7 @@ const iPhone=2007
 alert(iPhone)
 
 //3
-const js="Джеймс Гослинг"
+const js="Брендан Айк"
 alert(js)
 
 //4
@@ -29,12 +29,12 @@ alert(remainder)
 
 //7
 let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
-num = num + 1;
-num = num - 1;
+num  += 5;
+num -= 3;
+num *= 7;
+num /= 3;
+num ++;
+num --;
 alert(num);
 
 //8
@@ -63,4 +63,4 @@ alert(user[info])
 
 //10
 let name=prompt("Как вас зовут?")
-alert('Привет, ${name}?')
+alert(`Привет, ${name}?`) 
