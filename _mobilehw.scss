@@ -1,0 +1,58 @@
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top {
+        width: 375px;
+        height: 735px;
+    }
+    .start {
+        width: 375px;
+        margin-right: 0;
+        width: 343px;
+    }
+    .title {
+        width: 343px;
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        padding-left: 13px;
+    }
+    .subtitle {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: center;
+        width: 343px;
+        padding-left: 13px;
+    }
+    .go {
+        margin-left: 64px;
+    }
+    .menu {
+        width: 375px;
+        height: 1221px;  
+        background: #000915;
+    }
+    .menu__game {
+        display: grid;
+        grid-column: span 4;
+        gap: 32px;
+        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-direction: column;
+    }
+    .game_1 {
+        margin-top: 100px;
+    }
+    .game_2 {
+        margin-top: 0;
+    }
+    .game_3 {
+        margin-top: 0;
+    }
+}
