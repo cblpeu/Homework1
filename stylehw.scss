@@ -62,7 +62,7 @@ body {
     height: 556px;
     background: #000915;
 }
-.menu_game {
+.menu__game {
     display: grid;
     grid-column: span 4;
     gap: 32px;
@@ -77,7 +77,7 @@ body {
 .game_3 {
     background-image: url(imghw/game_3.png);
 }
-.text_game {
+.text__game {
     margin-top: 128px;
     width: 347px;
     height: 268px;
@@ -94,3 +94,5 @@ body {
     padding-left: 32px;
     padding-bottom: 32px;
 }
+
+@import 'mobilehw';
