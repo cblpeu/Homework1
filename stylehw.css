@@ -8,12 +8,12 @@ body {
 }
 
 .top {
-  width: 1200px;
-  height: 1024px;
   background-image: url(imghw/game_top.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-top: 217px;
+  padding-bottom: 490px;
 }
 
 .center {
@@ -34,7 +34,6 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding-top: 217px;
 }
 
 .subtitle {
@@ -61,19 +60,24 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  border: 1px solid #000915;
+}
+
+.go:hover {
+  background: #EB443F;
 }
 
 .menu {
-  width: 1200px;
-  height: 556px;
   background: #000915;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 128px;
 }
 
 .menu__game {
-  display: grid;
-  grid-column: span 4;
-  gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
+  display: flex;
+  gap: 27px;
+  flex-wrap: wrap;
 }
 
 .game_1 {
@@ -104,6 +108,20 @@ body {
   line-height: 32px;
   padding-left: 32px;
   padding-bottom: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.game_1:hover {
+  border: 3px solid #44D2FF;
+}
+
+.game_2:hover {
+  border: 3px solid #44D2FF;
+}
+
+.game_3:hover {
+  border: 3px solid #44D2FF;
 }
 
 @media (max-width: 767px) {
@@ -112,13 +130,13 @@ body {
     padding-right: 16px;
   }
   .top {
-    width: 375px;
-    height: 735px;
+    padding: 238px 0;
+    width: auto;
+    display: flex;
+    justify-content: center;
   }
   .start {
-    width: 375px;
     margin-right: 0;
-    width: 343px;
   }
   .title {
     width: 343px;
@@ -127,7 +145,7 @@ body {
     font-size: 32px;
     line-height: 39px;
     text-align: center;
-    padding-left: 13px;
+    padding: 0;
   }
   .subtitle {
     font-family: Montserrat;
@@ -142,16 +160,9 @@ body {
     margin-left: 64px;
   }
   .menu {
-    width: 375px;
-    height: 1221px;
     background: #000915;
   }
   .menu__game {
-    display: grid;
-    grid-column: span 4;
-    gap: 32px;
-    grid-template-columns: repeat(4, 1fr);
-    display: flex;
     flex-direction: column;
   }
   .game_1 {
@@ -162,5 +173,8 @@ body {
   }
   .game_3 {
     margin-top: 0;
+  }
+  .text__game {
+    width: auto;
   }
 }/*# sourceMappingURL=stylehw.css.map */

@@ -4,13 +4,13 @@
         padding-right: 16px;
     }
     .top {
-        width: 375px;
-        height: 735px;
+        padding: 238px 0;
+        width: auto;
+        display: flex;
+        justify-content: center;
     }
     .start {
-        width: 375px;
         margin-right: 0;
-        width: 343px;
     }
     .title {
         width: 343px;
@@ -19,7 +19,7 @@
         font-size: 32px;
         line-height: 39px;
         text-align: center;
-        padding-left: 13px;
+        padding: 0;
     }
     .subtitle {
         font-family: Montserrat;
@@ -34,16 +34,9 @@
         margin-left: 64px;
     }
     .menu {
-        width: 375px;
-        height: 1221px;  
         background: #000915;
     }
     .menu__game {
-        display: grid;
-        grid-column: span 4;
-        gap: 32px;
-        grid-template-columns: repeat(4, 1fr);
-        display: flex;
         flex-direction: column;
     }
     .game_1 {
@@ -54,5 +47,8 @@
     }
     .game_3 {
         margin-top: 0;
+    }
+    .text__game {
+        width: auto;
     }
 }

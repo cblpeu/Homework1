@@ -6,12 +6,12 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .top {
-    width: 1200px;
-    height: 1024px;
     background-image: url(imghw/game_top.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 217px;
+    padding-bottom: 490px;
 }
 .center {
     padding-left: calc(50% - 600px);
@@ -30,7 +30,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-top: 217px;
 }
 .subtitle {
     width: 481px;
@@ -55,18 +54,22 @@ body {
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;   
+    line-height: normal;  
+    border: 1px solid #000915 ; 
+}
+.go:hover {
+    background: #EB443F;
 }
 .menu {
-    width: 1200px;
-    height: 556px;
     background: #000915;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 128px;
 }
 .menu__game {
-    display: grid;
-    grid-column: span 4;
-    gap: 32px;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    gap: 27px;
+    flex-wrap: wrap;
 }
 .game_1 {
     background-image: url(imghw/game_1.png);
@@ -93,6 +96,17 @@ body {
     line-height: 32px; 
     padding-left: 32px;
     padding-bottom: 32px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.game_1:hover {
+    border: 3px solid #44D2FF;
+}
+.game_2:hover {
+    border: 3px solid #44D2FF;
+}
+.game_3:hover {
+    border: 3px solid #44D2FF;
 }
 
 @import 'mobilehw';
