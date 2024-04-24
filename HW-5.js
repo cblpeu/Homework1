@@ -79,18 +79,19 @@ const circle2 = {
 };
 
 
-//Задание 8
-function season(month) {
+// Задание 8
+function season() {
+    let month = prompt ('Введите число')
+
     if (month >= 3 && month <= 5) {
-        return "Весна";
+        alert ("Весна");
     } else if (month >= 6 && month <= 8) {
-        return "Лето";
+        alert ("Лето");
     } else if (month >= 9 && month <= 11) {
-        return "Осень";
+        alert ("Осень");
     } else if (month == 1 || month == 2 || month == 12 ) {
-        return "Зима";
+        alert ("Зима");
     } else {
-        return "Что-то странное)"
+        alert ("Что-то странное)")
     }
 }
-console.log(season(prompt("Введите число")));
