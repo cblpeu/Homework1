@@ -124,6 +124,46 @@ body {
   border: 3px solid #44D2FF;
 }
 
+.game {
+  background: #000915;
+  display: flex;
+}
+
+.blok_game {
+  padding-top: 282px;
+  padding-bottom: 282px;
+}
+
+.title_2 {
+  width: 377px;
+  height: 59px;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.subtitle_2 {
+  width: 584px;
+  height: 64px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: left;
+  color: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.gameFoto {
+  padding-top: 233px;
+  padding-bottom: 233px;
+  padding-left: 135px;
+}
+
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -176,5 +216,36 @@ body {
   }
   .text__game {
     width: auto;
+  }
+  .game {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blok_game {
+    padding-top: 50px;
+    padding-bottom: 64px;
+  }
+  .title_2 {
+    width: 343px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .subtitle_2 {
+    width: 343px;
+    height: 66px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .gameFoto {
+    padding: 0;
+    padding-bottom: 85px;
+  }
+  .foto {
+    width: 343px;
+    height: 236px;
   }
 }/*# sourceMappingURL=stylehw.css.map */
