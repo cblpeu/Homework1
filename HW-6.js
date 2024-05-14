@@ -82,3 +82,5 @@ const square2 = numbers2.map(function (num) {
     return num-(num*num)
 })
 console.log(square2)
+
+//Задание 14 
