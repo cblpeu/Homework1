@@ -82,4 +82,37 @@
         width: 343px;
         height: 236px;
     }
+    .game0_2 {
+        width: auto;
+        display: flex ;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .blok_game0_2 {
+        padding-top: 50px;
+        padding-bottom: 64px;
+        padding-left: 0;
+    }
+    .title_2_0_2 {
+        width: 264px;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        padding-left: 39px;
+    }
+    .subtitle_2_0_2 {
+        width: 343px;
+        height: 66px;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+    }
+    .gameFoto0_2 {
+        padding: 0;
+        padding-bottom: 85px;
+    }
+    .foto0_2 {
+        width: 343px;
+        height: 231px;
+    }
 }
