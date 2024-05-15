@@ -67,3 +67,31 @@ function formatedDateAndTime(inputDate) {
 }
 
 //Задание 11
+function remember() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    let fruit = fruits.sort(() => Math.random() - 0.5);
+    alert(fruit);
+    let question_1 = " " + prompt('Какой первый фрукт?');
+    if (question_1 === " " + null) {
+        alert ('Отмена');
+    } else {
+        let question_2 = " " + prompt('Какой последний фрукт?');
+        if (question_2 === " " + null) {
+            alert ('Отмена');
+        } else {
+            if (!question_1.trim() || !question_2.trim()) {
+                alert ('Где-то пробел');
+            } else {
+                if (question_1.toLowerCase() === fruit[0].toLowerCase() && question_2.toLowerCase() !== fruit[6].toLowerCase() || question_1.toLowerCase() !== fruit[0].toLowerCase() && question_2.toLowerCase() === fruit[6].toLowerCase()) {
+                    alert ('Почти правильно')
+                } else {
+                    if (question_1.toLowerCase() === fruit[0].toLowerCase() && question_2.toLowerCase() === fruit[6].toLowerCase()) {
+                        alert ('Правильно!');
+                    } else {
+                        alert ('Неправильно');
+                    }
+                }
+           }  
+        }  
+    }
+}
