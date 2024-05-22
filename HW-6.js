@@ -6,8 +6,8 @@ for (let i = 0; i < numbs.length; i++ ) {
 }
 
 //Задание 2
-let numbs2 = [1, 5, 4, 10, 0, 3];
-let find = numbs2.includes(4);
+const indexNum = [1, 5, 4, 10, 0, 3];
+console.log(indexNum.indexOf(4));
 
 //Задание 3
 let number = [1, 3, 5, 10, 20]
@@ -15,12 +15,15 @@ let joinNumber = number.join('');
 console.log(joinNumber);
 
 //Задание 4
-let arr = [
- [1, 1, 1], [1, 1, 1], [1, 1, 1]
-]
-for (let item of arr) {
-         console.log(item[i]);
+let arr = [];
+for (i=0; i<3; i++) {
+   const nestArr = [];
+   for (k=0; k<3; k++) {
+     nestArr.push(1);
+   }
+   arr.push(nestArr);
 }
+console.log(arr);
 
 //Задание 5
 let add = [1, 1, 1];
@@ -40,7 +43,7 @@ console.log(result);
 const guess = [9, 8, 7, 6, 5];
 
 let userNum = prompt ('Введите число');
-is (isNaN(userNum) || userNum == false) {
+if (isNaN(userNum) || userNum == false) {
     alert('Что-то не то');
 } else if (myNum.includes(userNum)) {
     alert('Угадал');
@@ -49,9 +52,10 @@ is (isNaN(userNum) || userNum == false) {
 }
 
 //Задание 8
-const array = ['abcdef']
-array.reverse()
-console.log(array)
+const array = 'abcdef';
+const reverseArray = array.split('').reverse().join('');
+console.log(reverseArray);
+
 
 //Задание 9
 const one = [1, 2, 3];
