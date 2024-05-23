@@ -42,9 +42,9 @@ function getRandomArrNumber (a, b) {
 console.log(new Date());
 
 //Задание 9
-let currentDate = new DelayNode();
-currentDate.setDate(currentDate.setDate() + 73);
-console.log(currentDate);
+let currentDate = new Date();
+let after73days = currentDate + (73*24*60*60*1000);
+console.log(new Date(after73days));
 
 //Задание 10
 function formatedDateAndTime(inputDate) {

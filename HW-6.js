@@ -40,7 +40,7 @@ console.log(result);
 const guess = [9, 8, 7, 6, 5];
 
 let userNum = prompt ('Введите число');
-is (isNaN(userNum) || userNum == false) {
+if (isNaN(userNum) || userNum == false) {
     alert('Что-то не то');
 } else if (myNum.includes(userNum)) {
     alert('Угадал');
