@@ -43,7 +43,7 @@ console.log(new Date());
 
 //Задание 9
 let currentDate = new Date();
-let after73days = currentDate + (73*24*60*60*1000);
+let after73days = +currentDate + (73*24*60*60*1000);
 console.log(new Date(after73days));
 
 //Задание 10
