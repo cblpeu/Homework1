@@ -61,7 +61,7 @@ function delayForSecond(cb) {
 }
 
 function sayHi (name) {
-    console.log('Привет, ${name}!');
+    console.log(`Привет, ${name}!`);
 }
 
 
