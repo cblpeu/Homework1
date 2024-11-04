@@ -1,40 +1,33 @@
-function getPlayerChoice() {
-    let PlayerChoice = prompt ("Что выберешь, камень, ножницы или бумага?");
-    while (PlayerChoice !== "камень" && PlayerChoice !== "ножницы" && PlayerChoice !== "бумага");
-    return PlayerChoice  
-}
+function playKNB() {
+    let playerChoice = prompt ("Что выберешь, камень, ножницы или бумага?");
+    while (playerChoice !== "камень" && playerChoice !== "ножницы" && playerChoice !== "бумага");
+    return playerChoice;  
 
-function getRobotChoice() {
     const choice = ["камень", "ножницы", "бумага"];
     const randomChoice = Math.floor(Math.random() * choice.length);
-    return choice[randomChoice];
-}
+    const robotChoice = choice[randomChoice];
 
-function choosingWinner() {
-    if (PlayerChoice === RobotChoice) {
-        return "Ничья";
+    let result;
+    if (playerChoice === robotChoice) {
+        result = "Ничья";
     }
-    if (PlayerChoice === "ножницы", RobotChoice === "бумага") {
-        return "Победааа)"
+    if (playerChoice === "ножницы", robotChoice === "бумага") {
+        result = "Победааа)";
     }
-    if (PlayerChoice === "бумага", RobotChoice === "ножницы") {
-        return "Поражение("
+    if (playerChoice === "бумага", robotChoice === "ножницы") {
+        result = "Поражение(";
     }
-    if (PlayerChoice === "бумага", RobotChoice === "камень") {
-        return "Победааа)"
+    if (playerChoice === "бумага", robotChoice === "камень") {
+        result = "Победааа)";
     }
-    if (PlayerChoice === "камень", RobotChoice === "бумага") {
-        return "Поражение("
+    if (playerChoice === "камень", robotChoice === "бумага") {
+        result = "Поражение(";
     }
-    if (PlayerChoice === "камень", RobotChoice === "ножницы") {
-        return "Победааа)"
+    if (playerChoice === "камень", robotChoice === "ножницы") {
+        result = "Победааа)";
     }
-    if (PlayerChoice === "ножницы", RobotChoice === "камень") {
-        return "Поражение("
+    if (playerChoice === "ножницы", robotChoice === "камень") {
+        result = "Поражение(";
     }
-}
-
-function resultGame() {
-    const result = choosingWinner();
     aler(`${result}`);
-} 
+}
