@@ -11,23 +11,23 @@ function playKNB() {
     if (playerChoice === robotChoice) {
         result = "Ничья";
     }
-    if (playerChoice === "ножницы", robotChoice === "бумага") {
+    if (playerChoice === "ножницы" && robotChoice === "бумага") {
         result = "Победааа)";
     }
-    if (playerChoice === "бумага", robotChoice === "ножницы") {
+    if (playerChoice === "бумага" && robotChoice === "ножницы") {
         result = "Поражение(";
     }
-    if (playerChoice === "бумага", robotChoice === "камень") {
+    if (playerChoice === "бумага" && robotChoice === "камень") {
         result = "Победааа)";
     }
-    if (playerChoice === "камень", robotChoice === "бумага") {
+    if (playerChoice === "камень" && robotChoice === "бумага") {
         result = "Поражение(";
     }
-    if (playerChoice === "камень", robotChoice === "ножницы") {
+    if (playerChoice === "камень" && robotChoice === "ножницы") {
         result = "Победааа)";
     }
-    if (playerChoice === "ножницы", robotChoice === "камень") {
+    if (playerChoice === "ножницы" && robotChoice === "камень") {
         result = "Поражение(";
     }
-    aler(`${result}`);
+    alert(`${result}`);
 }
