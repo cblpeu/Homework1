@@ -1,7 +1,8 @@
 function playKNB() {
-    let playerChoice = prompt ("Что выберешь, камень, ножницы или бумага?");
-    while (playerChoice !== "камень" && playerChoice !== "ножницы" && playerChoice !== "бумага");
-    return playerChoice;  
+    let playerChoice = prompt ("Что выберешь, камень, ножницы или бумага?").toLowerCase();
+    while (playerChoice !== "камень" && playerChoice !== "ножницы" && playerChoice !== "бумага") {
+        playerChoice = prompt("Ты написал что-то не то. Проверь: камень, ножницы или бумага").toLowerCase();
+    } 
 
     const choice = ["камень", "ножницы", "бумага"];
     const randomChoice = Math.floor(Math.random() * choice.length);
