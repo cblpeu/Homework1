@@ -132,7 +132,7 @@ function playKNB() {
         result = "Поражение(";
     }
     if (playerChoice === "камень" && robotChoice === "ножницы") {
-        result = "Победааа)";
+        result = "Победаааа)";
     }
     if (playerChoice === "ножницы" && robotChoice === "камень") {
         result = "Поражение(";
