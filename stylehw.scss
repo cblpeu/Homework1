@@ -45,6 +45,9 @@ body {
     padding-bottom: 48px;
 }
 .go {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 247px;
     height: 66px;
     flex-shrink: 0;
@@ -56,17 +59,31 @@ body {
     font-style: normal;
     font-weight: 600;
     line-height: normal;  
-    border: 1px solid #000915 ; 
+    border: 1px solid #000915; 
+    text-decoration: none;
 }
 .go:hover {
     background:#FFFFFF;
     color:#202027;
 }
+.ribbon-container {
+    overflow: hidden;
+}
 .ribbon {
     background: url(imghw/ribbon.svg) no-repeat center;
-    height: 80px;
     background-color: #BCEC30;
+    height: 80px;
+    animation: slide 40s;
 }
+@keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1000px, 0, 0);
+    }
+}
+
 .menu {
     background: url(imghw/Star_6.svg) no-repeat right 77px,
                 url(imghw/Star_7.svg) no-repeat 25px 770px,
@@ -104,6 +121,11 @@ body {
 .menu__game {
     display: flex;
     padding-top: 32px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.menu__game:hover {
+    transform: scale(1.06);
 }
 .game1 {
     width: 378px;

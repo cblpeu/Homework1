@@ -47,6 +47,9 @@ body {
 }
 
 .go {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 247px;
   height: 66px;
   flex-shrink: 0;
@@ -59,6 +62,7 @@ body {
   font-weight: 600;
   line-height: normal;
   border: 1px solid #000915;
+  text-decoration: none;
 }
 
 .go:hover {
@@ -66,12 +70,25 @@ body {
   color: #202027;
 }
 
-.ribbon {
-  background: url(imghw/ribbon.svg) no-repeat center;
-  height: 80px;
-  background-color: #BCEC30;
+.ribbon-container {
+  overflow: hidden;
 }
 
+.ribbon {
+  background: url(imghw/ribbon.svg) no-repeat center;
+  background-color: #BCEC30;
+  height: 80px;
+  animation: slide 40s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1000px, 0, 0);
+  }
+}
 .menu {
   background: url(imghw/Star_6.svg) no-repeat right 77px, url(imghw/Star_7.svg) no-repeat 25px 770px, url(imghw/Star_8.svg) no-repeat 40px 822px;
   background-color: #202027;
@@ -111,6 +128,12 @@ body {
 .menu__game {
   display: flex;
   padding-top: 32px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.menu__game:hover {
+  transform: scale(1.06);
 }
 
 .game1 {
@@ -328,45 +351,136 @@ body {
   padding-top: 60px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 700px) {
   .center {
     padding-left: 16px;
     padding-right: 16px;
   }
   .top {
-    padding: 238px 0;
-    width: auto;
-    display: flex;
-    justify-content: center;
+    background: url(imghw/Star_14.svg) no-repeat 37px 97px, url(imghw/Star_15.svg) no-repeat 91px 64px, url(imghw/Star_16.svg) no-repeat 303px 580px, url(imghw/Star_17.svg) no-repeat 272px 557px, url(imghw/Star_13.svg) no-repeat right top;
+    background-color: #E1FF8F;
+    padding-top: 147px;
   }
   .start {
-    margin-right: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 343px;
+    height: 371px;
   }
   .title {
-    width: 343px;
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+    width: 262px;
+    height: 196px;
+    font-size: 40px;
+    line-height: 48px;
     text-align: center;
-    padding: 0;
+    padding-left: 16px;
   }
   .subtitle {
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 19px;
     text-align: center;
-    width: 343px;
-    padding-left: 13px;
+    width: 296px;
+    height: 60px;
+    padding-bottom: 36px;
   }
   .go {
-    margin-left: 64px;
+    width: 285px;
+    height: 55px;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .ribbon {
+    height: 51px;
   }
   .menu {
-    background: #000915;
+    display: none;
   }
-  .menu__game {
-    flex-direction: column;
+  .menu2 {
+    padding-bottom: 48px;
+  }
+  .title_description2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 16px;
+  }
+  .blocGame2 {
+    display: flex;
+    gap: 24px;
+  }
+  .nameGame {
+    width: 285px;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+    padding-top: 314px;
+    padding-left: 29px;
+  }
+  .descriptionGame {
+    width: 249px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    padding-top: 16px;
+    padding-left: 29px;
+  }
+  .go2 {
+    width: 285px;
+    height: 55px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 29px;
+    margin-top: 32px;
+  }
+  .left {
+    padding-left: 0;
+  }
+  .game1_2 {
+    width: 343px;
+    height: 528px;
+    background-image: url(imghw/Mgame1_2.png);
+    background-position: top;
+  }
+  .game2_2 {
+    width: 343px;
+    height: 567px;
+    background-image: url(imghw/Mgame2_2.png);
+    background-position: top;
+  }
+  .game3_2 {
+    width: 343px;
+    height: 567px;
+    background-image: url(imghw/Mgame3_2.png);
+    background-position: top;
+  }
+  .game4_2 {
+    width: 343px;
+    height: 528px;
+    background-image: url(imghw/Mgame4_2.png);
+    background-position: top;
+  }
+  .game5_2 {
+    width: 343px;
+    height: 606px;
+    background-image: url(imghw/Mgame5_2.png);
+    background-position: top;
+  }
+  .game6_2 {
+    width: 343px;
+    height: 626px;
+    background-image: url(imghw/Mgame6_2.png);
+    background-position: top;
+  }
+  .basement {
+    height: 100px;
+  }
+  .rights {
+    height: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 40px;
   }
 }/*# sourceMappingURL=stylehw.css.map */
