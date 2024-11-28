@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #202027;
 }
 
 .top {
@@ -72,26 +73,27 @@ body {
 
 .ribbon-container {
   overflow: hidden;
+  background-color: #BCEC30;
+  height: 80px;
+  width: 3220px;
 }
 
 .ribbon {
   background: url(imghw/ribbon.svg) no-repeat center;
-  background-color: #BCEC30;
   height: 80px;
   animation: slide 40s;
 }
 
 @keyframes slide {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0%, 0, 0);
   }
   100% {
-    transform: translate3d(-1000px, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
 }
 .menu {
   background: url(imghw/Star_6.svg) no-repeat right 77px, url(imghw/Star_7.svg) no-repeat 25px 770px, url(imghw/Star_8.svg) no-repeat 40px 822px;
-  background-color: #202027;
   padding-top: 94px;
   padding-bottom: 50px;
 }
@@ -214,7 +216,6 @@ body {
 
 .menu2 {
   background: url(imghw/Star_9.svg) no-repeat 1277px 93px, url(imghw/Star_10.svg) no-repeat 1320px 126px, url(imghw/Star_11.svg) no-repeat 1319px 3366px, url(imghw/Star_12.svg) no-repeat 1249px 3414px;
-  background-color: #202027;
   padding-top: 46px;
   padding-bottom: 144px;
 }

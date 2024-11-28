@@ -62,8 +62,8 @@ function mathGame() {
 }
 //игра 3
 function simpleArithmetic() {
-    const userText = promt("Введи какой-нибудь текст, а я переверну его.");
-    const invertedText = userText.reverse().join('');
+    const userText = prompt("Введи какой-нибудь текст, а я переверну его.");
+    const invertedText = userText.split('').reverse().join('');
     alert(`А вот что получилось: ${invertedText}`);
 }
 //игра 4
@@ -71,27 +71,27 @@ function quiz() {
     const questions = [
         {
             question: "Шоу где звучит фраза «крутите барабан»?",
-            Options: ["1) Танцы", "2) Голос", "3) Поле чудес", "4)Пусть говорят"],
+            options: ["1) Танцы", "2) Голос", "3) Поле чудес", "4)Пусть говорят"],
             correctAnswer: "3"
         },
         {
             question: "Висит груша нельзя скушать, что это?",
-            Options: ["1) Лампочка", "2) Граната", "3) Стакан", "4) Одежда"],
+            options: ["1) Лампочка", "2) Граната", "3) Стакан", "4) Одежда"],
             correctAnswer: "1"
         },
         {
             question: "Какой месяц самый короткий?",
-            Options: ["1) Январь", "2) Февраль", "3) Март", "4) Август"],
+            options: ["1) Январь", "2) Февраль", "3) Март", "4) Август"],
             correctAnswer: "2"
         },
         {
             question: "Когда празднуется День Победы?",
-            Options: ["1) 9 мая", "2) 31 декабря", "3) 6 мая", "4) 1 сентября"],
+            options: ["1) 9 мая", "2) 31 декабря", "3) 6 мая", "4) 1 сентября"],
             correctAnswer: "1"
         },
         {
             question: "Какой коктейль делается на основе рома?",
-            Options: ["1) Маргарита", "2) Белый русский", "3) Дайкири", "4) Базиликовый смеш"],
+            options: ["1) Маргарита", "2) Белый русский", "3) Дайкири", "4) Базиликовый смеш"],
             correctAnswer: "3"
         }
     ];
@@ -138,4 +138,8 @@ function playKNB() {
         result = "Поражение(";
     }
     alert(`${result}`);
+}
+//игра 6
+function color() {
+    document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
 }
