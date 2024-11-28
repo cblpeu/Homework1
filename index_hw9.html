@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="title">Всем привет! Это 9 домашка.</h1>
+    <button class="goh1">Скрыть</button>
+
+    <p class="text">При нажатии на кнопку текст изменится.</p>
+    <button class="go2">Изменить цвет</button>
+
+    <button class="go3">Изменить текст</button>
+
+    <h2 class="description">Заголовок второй</h2>
+    <p class="description">Поменяюсь и я, и заголовок, и кнопка</p>
+    <button class="description">Просто кнопка</button>
+
+    <p class="description2">Я буду "Новый текст"</p>
+    <p class="noDescription">А я не буду</p>
+    <p class="description2">И я буду</p>
+    
+    <button class="add">Добавить элемент</button>
+
+    <button class="delete">Удалить элемент</button>
+
+
+    <script>
+        //Задание 1
+        const titleEl = document.querySelector('.title');
+        const goh1El = document.querySelector('.goh1');
+
+        goh1El.addEventListener('click', function () {
+            if (titleEl.style.display === 'none') {
+                titleEl.style.display = 'block';
+            } else {
+                titleEl.style.display = 'none';
+            }
+        })
+
+        //Задание 2
+        const textEl = document.querySelector('.text');
+        const go2El = document.querySelector('.go2');
+
+        go2El.addEventListener('click', function () {
+            textEl.style.color = 'blue';
+        })
+
+        //Задание 3
+        const go3El = document.querySelector('.go3');
+
+        go3El.addEventListener('click', function () {
+            titleEl.textContent = 'Привет, мир!';
+        })
+
+        //Задание 4
+        const descriptionEl = document.querySelectorAll('.description');
+
+        descriptionEl.forEach(function (element) {
+            element.textContent = 'Изменённый текст';
+        })
+
+        //Задание 5
+        const description2El = document.querySelectorAll('.description2');
+
+        description2El.forEach(function (element) {
+        element.textContent = 'Новый текст';
+        })
+
+        //Задание 6
+        const addEL = document.querySelector('.add');
+
+        addEL.addEventListener('click', function () {
+            const newParag = document.createElement('p');
+            newParag.textContent = 'Новый абзац';
+            document.body.appendChild(newParag);
+        })
+
+        //Задание 7
+        const deleteEl = document.querySelector('.delete');
+
+        deleteEl.addEventListener('click', function () {
+            const descriptionEl = querySelectorAll('.description');
+            descriptionEl.remove()
+        })
+        //rfr nfr
+    </script>
+</body>
+</html>
